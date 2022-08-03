@@ -17,8 +17,16 @@ def cmd (): #打开cmd
     pyautogui.keyUp('r')
     pyautogui.typewrite('cmd')
     pyautogui.press('enter')
+ml = 0
+mls = 0
+#读取下载目录
+with open('data.txt', 'r') as f:
+    data = f.read()
+    ml = ('{}'.format(data))
 
+mling = 'python d.py'#启动下载器命令
 
+print('下载路径:',ml)#确认下载路径
 
 sui = '【A】下载视频\n【B】设置\n【C】软件信息\n【D】注意事项\n请输入：'
 
@@ -46,13 +54,10 @@ if (ssui == 'A'):
         p = 0
     else:
         p = input('下载到多少P：')
-    #mls = sys.argv[0]#input('请输入视频下载器的路径：')
-    ml  = 'c:/bi/'#print('下载路径:',mls.replace('p2p.py', ''))#确认下载路径
-    mling = 'python d.py'
+
     hz = input(hzUI)
     shijian = input('每次下载结束等待时间(整数)：')
     cmd()
-
     pyautogui.press('c')
     pyautogui.press('d')
     pyautogui.press('space')
@@ -65,8 +70,10 @@ if (ssui == 'A'):
             jr_cmd(str(ppp))
             jr_cmd(hz)
             if (hz == '80'):
-                HEVC = Y 
-            jr_cmd(Y)
+                HEVC = 'Y'
+            else:
+                HEVC = 'Y'
+            jr_cmd(HEVC)
             ppp += 1
             pyautogui.press('enter')
             sleep(int(shijian))
@@ -76,8 +83,10 @@ if (ssui == 'A'):
         jr_cmd(str(pv))
         jr_cmd(hz)
         if (hz == '80'):
-            HEVC = Y 
-        jr_cmd(Y)
+            HEVC =  'Y'
+        else:
+            HEVC = "N"
+        jr_cmd(HEVC)
         pyautogui.press('enter')
         sleep(int(shijian))
     else:
@@ -85,8 +94,10 @@ if (ssui == 'A'):
         jr_cmd(bv)
         jr_cmd(hz)
         if (hz == '80'):
-            HEVC = Y 
-        jr_cmd(Y)
+            HEVC = 'Y' 
+        else:
+            HEVC = 'N'
+        jr_cmd(HEVC)
     sleep(int(shijian))
     gb = 'exit'
     jr_cmd(gb)
