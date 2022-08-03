@@ -5,8 +5,8 @@
     要环境变量里有aria2c和ffmpeg
     使用了另一个项目：bilibili_own_tools
     需要安装在cmd可以触及的地方
-
-#一下是bilibili_own_tools原文
+    之后执行python p2p.py即可
+#以下下是bilibili_own_tools原文
 bilibili_own_tools
 It is a learning project<br>
 自编小程序<br>
