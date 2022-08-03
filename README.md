@@ -6,6 +6,7 @@
     使用了另一个项目：bilibili_own_tools
     需要安装在cmd可以触及的地方
     之后执行python p2p.py即可
+    https://www.df100.ltd/154.asp
 #以下下是bilibili_own_tools原文
 bilibili_own_tools
 It is a learning project<br>
