@@ -64,6 +64,7 @@ if (ssui == 'A'):
     jr_cmd(ml)
     if (int(p) >= 1):
         ppp = 1
+        mling = 'python d_p.py'
         for pp in range(int(p)):
             jr_cmd(mling)
             jr_cmd(bv)
@@ -78,6 +79,7 @@ if (ssui == 'A'):
             pyautogui.press('enter')
             sleep(int(shijian))
     elif(Pv_s == 1):
+        mling = 'python d_p.py'
         jr_cmd(mling)
         jr_cmd(bv)
         jr_cmd(str(pv))
