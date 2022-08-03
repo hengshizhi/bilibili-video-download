@@ -1,3 +1,11 @@
+#这是我基于下面的一个项目写得一个CMD操控工具
+它可以用来操控cmd来下载视频，很原始的方法，所以下载视频的时候不要动
+    需要的依赖项
+    pyautogui
+    要环境变量里有aria2c和ffmpeg
+    使用了另一个项目：bilibili_own_tools
+
+#一下是bilibili_own_tools原文
 # bilibili_own_tools
 It is a learning project<br>
 自编小程序<br>
