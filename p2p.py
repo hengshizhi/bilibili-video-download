@@ -101,7 +101,7 @@ elif(ssui == 'B'):
         jr_cmd('cd '+gzml) 
 elif(ssui == 'C'):
     print('软件作者：星姮十织\n代码仓库:https://github.com/hengshizhi/bilibili-video-download\n使用其他项目：bilibili_own_tools')
-elif(ssui == 'D')
+elif(ssui == 'D'):
     print('注意实现：\n 1>视频下载时最好不要动，除非下载较大视频在走进度条 \n 2>本cmd操控器还有很多的bug，我会继续更新，敬请期待')
 
 #pyautogui.typewrite('cd',' ',ml)
