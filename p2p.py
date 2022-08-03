@@ -1,9 +1,8 @@
-
-from pickletools import uint1
-from time import sleep, time
-from tkinter import BEVEL, Y
+from time import sleep
 import pyautogui
 import sys
+
+#bilibili星姮十织
 
 def jr_cmd (data):  #把命令键入cmd并运行
     for ll in range(len(data)):
@@ -21,7 +20,7 @@ def cmd (): #打开cmd
 
 
 
-sui = '【A】下载视频\n【B】设置\n【C】软件信息\n请输入：'
+sui = '【A】下载视频\n【B】设置\n【C】软件信息\n【D】注意事项\n请输入：'
 
 ssui = input(sui)
 
@@ -101,9 +100,9 @@ elif(ssui == 'B'):
         print (gzml)
         jr_cmd('cd '+gzml) 
 elif(ssui == 'C'):
-    print('软件作者：星姮十织\n代码仓库:')
-
-
+    print('软件作者：星姮十织\n代码仓库:https://github.com/hengshizhi/bilibili-video-download\n使用其他项目：bilibili_own_tools')
+elif(ssui == 'D')
+    print('注意实现：\n 1>视频下载时最好不要动，除非下载较大视频在走进度条 \n 2>本cmd操控器还有很多的bug，我会继续更新，敬请期待')
 
 #pyautogui.typewrite('cd',' ',ml)
 
